@@ -92,6 +92,7 @@ html, body {
   .about-content {
     flex-direction: column; /* Stack content vertically on medium screens */
     align-items: center;
+    max-width: 900px; /* Reduce max-width for medium screens */
   }
 
   .about-images {
@@ -118,6 +119,7 @@ html, body {
     font-size: 16px; /* Adjust paragraph size for smaller screens */
   }
 }
+
 
 @media (max-width: 768px) {
   .about-image {
