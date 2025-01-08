@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import homeImage from "./../assets/home.jpeg";
 import About from "./about";
@@ -7,10 +7,16 @@ import Bricks from "./Bricks";
 import ContactUs from "./contact";
 
 const HomePage = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <div className="w-full overflow-x-hidden">
       <div className="container smooth-scroll">
-        <nav className="navbar">
+        <nav className={`navbar ${menuActive ? "active" : ""}`}>
           <div className="logo"><span className="logoText">UR</span>_Blocks</div>
           <ul className="navLinks">
             <li className="navItem">
@@ -29,6 +35,9 @@ const HomePage = () => {
               <a href="#contact" className="navLink">Contact Us</a>
             </li>
           </ul>
+          <div className="menu-icon" onClick={toggleMenu}>
+            &#9776;
+          </div>
         </nav>
 
         <main className="mainContent">

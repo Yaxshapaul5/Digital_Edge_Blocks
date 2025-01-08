@@ -16,22 +16,27 @@
   }
   
   /* Bricks Container Styles */
-  .bricks-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
-    gap: 20px;
-    justify-items: center; /* Center cards horizontally */
-  }
-  
-  /* Brick Card Styles */
-  .brick-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    text-align: left;
-    width: 300px; /* Fixed card width */
-  }
+ /* Bricks Container Styles */
+.bricks-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 20px; /* Add spacing between items */
+  padding: 20px; /* Optional: Add padding */
+}
+
+/* Brick Card Styles */
+.brick-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+  width: 300px; /* Fixed card width */
+  margin: 10px; /* Add margin for spacing */
+}
+
   
   /* Brick Image Styles */
   .brick-image {

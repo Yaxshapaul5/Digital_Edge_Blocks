@@ -5,23 +5,41 @@
   }
   
   /* Gallery Container Styles */
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
-    gap: 20px; /* Spacing between images */
-  }
-  
-  /* Gallery Item Styles */
+ /* Gallery Container Styles */
+.gallery-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 20px; /* Add spacing between items */
+  padding: 20px; /* Optional padding for container */
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Light background for card */
+  display: flex;
+  flex-direction: column; /* Stack image and card */
+  width: 300px; /* Fixed width for consistent layout */
+  margin: 10px; /* Add margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #f9f9f9; /* Light background for card */
-    display: flex;
-    flex-direction: column; /* Stack image and card */
+    width: 100%; /* Full width for smaller screens */
   }
-  
+
+  .gallery-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Keep items centered */
+  }
+}
+
   /* Gallery Image Styles */
   .gallery-image {
     width: 100%;

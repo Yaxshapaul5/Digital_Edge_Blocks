@@ -8,6 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +35,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   padding: 20px;
 }
 
@@ -75,7 +75,6 @@ html, body {
   color: #630505;
   font-family: 'Apple Chancery', cursive;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-
 }
 
 .about-text p {
@@ -88,3 +87,62 @@ html, body {
   font-family: 'Apple Chancery', cursive;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column; /* Stack content vertically on medium screens */
+    align-items: center;
+  }
+
+  .about-images {
+    flex: none;
+    width: 100%;
+    justify-content: center; /* Center images */
+  }
+
+  .about-text {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 28px; /* Adjust heading size for smaller screens */
+  }
+
+  .about-text p {
+    font-size: 16px; /* Adjust paragraph size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    max-width: 100%; /* Ensure images take full width on mobile */
+  }
+
+  .about-text h1 {
+    font-size: 24px; /* Adjust heading size for small screens */
+  }
+
+  .about-text p {
+    font-size: 14px; /* Adjust paragraph size for small screens */
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 22px; /* Smaller heading on very small screens */
+  }
+
+  .about-text p {
+    font-size: 12px; /* Smaller text on very small screens */
+  }
+}
