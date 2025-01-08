@@ -38,7 +38,7 @@ html, body {
 /* Component Styles */
 .container {
     background: #ffffff;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     color: #500606;
     font-family: Arial, sans-serif;
     display: flex;
@@ -265,7 +265,7 @@ html, body {
 
     .content-wrapper {
         flex-direction: column;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 
     .text-section {
