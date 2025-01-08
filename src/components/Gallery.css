@@ -1,0 +1,70 @@
+/* Gallery Section Styles */
+.gallery-section {
+    background-color: #ffffff; /* White background for gallery */
+    padding: 40px 20px;
+  }
+  
+  /* Gallery Container Styles */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Spacing between images */
+  }
+  
+  /* Gallery Item Styles */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; /* Light background for card */
+    display: flex;
+    flex-direction: column; /* Stack image and card */
+  }
+  
+  /* Gallery Image Styles */
+  .gallery-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Crop the image to fit the height */
+    border-bottom: 1px solid #ddd; /* Separate image from card */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Gallery Card Styles */
+  .gallery-card {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff; /* White card background */
+    color: #800000; /* Text color */
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid #ddd; /* Separate card from image */
+    flex: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;
+  }
+  
+  /* Bottom Cord Styles */
+  .bottom-cord {
+    margin-top:02px;
+    margin-Bottom: 20px;
+    background-color: #ffffff; /* White background for cord */
+    text-align: center;
+    padding: 10px 20px;
+    /* border-bottom: 2px solid #ddd; */
+  }
+  
+  .bottom-cord p {
+    color: #800000; /* Maroon text color */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;
+  }
+  

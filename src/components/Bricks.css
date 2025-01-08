@@ -1,0 +1,70 @@
+/* Bricks Section Styles */
+.bricks-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #630505;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;;
+    margin-bottom: 20px;
+  }
+  
+  /* Bricks Container Styles */
+  .bricks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 20px;
+    justify-items: center; /* Center cards horizontally */
+  }
+  
+  /* Brick Card Styles */
+  .brick-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: left;
+    width: 300px; /* Fixed card width */
+  }
+  
+  /* Brick Image Styles */
+  .brick-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Brick Info Styles */
+  .brick-info {
+    padding: 15px;
+  }
+  
+  .brick-info h3 {
+    font-size: 18px;
+    color: #630505;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;
+  }
+  
+  .brick-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;
+  }
+  
+  .brick-info strong {
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: 'Apple Chancery', cursive;
+  }
+  
